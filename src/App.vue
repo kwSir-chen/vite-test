@@ -1,7 +1,6 @@
 <template>
   <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
-  <!-- <router-view></router-view> -->
-  <HelloWorld msg="Vue 3 + Vite" />
+  <router-view></router-view>
 </template>
 
 <script setup>

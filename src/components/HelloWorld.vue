@@ -8,9 +8,9 @@
 
   <button @click="state.count++">count is: {{ state.count }}</button>
   <p>
-    Edit
-    <code>components/HelloWorld.vue</code> to test hot module replacement.
+    children view
   </p>
+  <router-view></router-view>
 </template>
 
 <script setup>
