@@ -8,8 +8,11 @@
 
   <button @click="state.count++">count is: {{ state.count }}</button>
   <p>
-    children view
+    <router-link to="/user">
+        children view
+    </router-link>
   </p>
+  
   <router-view></router-view>
 </template>
 
