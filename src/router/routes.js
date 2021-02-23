@@ -18,7 +18,7 @@ export const routes = [
         component: User,
     },
     {
-        path: '/404',
+        path: '/:pathMatch(.*)',
         name: '404',
         component: () => import('../components/404.vue')
     }

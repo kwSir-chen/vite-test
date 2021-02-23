@@ -9,12 +9,12 @@ const router = createRouter({
   routes,
 });
 
-router.beforeEach((to, from, next) => {
-    if (!to.matched.length) {
-        next({path: '/404'})
-    } else {
-        next()
-    }
-})
+// router.beforeEach((to, from, next) => {
+//     if (!to.matched.length) {
+//         next({path: '/404'})
+//     } else {
+//         next()
+//     }
+// })
 
 export default router
