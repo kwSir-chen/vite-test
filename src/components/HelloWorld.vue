@@ -12,6 +12,7 @@
         children view
     </router-link>
   </p>
+  <teleport to="body">body</teleport>
   
   <router-view></router-view>
 </template>

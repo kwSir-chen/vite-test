@@ -1,21 +1,18 @@
-import HelloWorld from '../components/HelloWorld.vue';
-import User from '../components/User.vue';
-
 export const routes = [
     {
         path: '/hello',
         name: 'hello',
-        component: HelloWorld,
+        component: () => import('../components/HelloWorld.vue'),
         children: [{
             path: 'user',
             name: '',
-            component: User,
+            component: () => import('../components/User.vue'),
         }],
     },
     {
         path: '/user',
         name: '',
-        component: User,
+        component: () => import('../components/User.vue'),
     },
     {
         path: '/:pathMatch(.*)',
